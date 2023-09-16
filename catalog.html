@@ -9,14 +9,31 @@
 
   <body>
     <div class="main-container">
-      <header class="catalog-header">
+      <header class="main-header catalog-header">
         <a href="index.html" class="catalog-image-link">
           <img class="header-image" src="images/logo.svg" alt="Логотип магазина">
         </a>
-        <nav class="header-navigation">
+        <nav class="header-navigation catalog-navigation">
           <ul class="header-first-list">
-            <li class="header-first-item">
-              <a class="header-link" href="#">Каталог</a>
+            <li class="header-first-item header-catalog-item">
+              <a class="header-link catalog-link" href="#">Каталог</a>
+              <ul class="catalog-list">
+                <li class="catalog-item news">
+                 <a href="#" class="catalog-item-link news-link">Новинки</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="catalog.html" class="catalog-item-link">Сливочное</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#" class="catalog-item-link"> Щербеты</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#" class="catalog-item-link">Фруктовый лёд</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#" class="catalog-item-link">Мелорин</a>
+                </li>
+              </ul>
             </li>
             <li class="header-first-item">
               <a class="header-link" href="#">Доставка и оплата</a>
@@ -26,21 +43,25 @@
             </li>
           </ul>
           <ul class="header-second-list">
-            <li class="header-second-item">
+            <li class="header-second-item tel-item">
               <tel class="header-tel">+7 800 555-86-28</tel>
             </li>
             <li class="header-second-item">
-              <button class="header-button" type="button">
-                <span class="visually-hidden">Поиск по сайту</span>
+              <button class="header-button search-button" type="button">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.66329 7.33008C2.66329 4.75275 4.75263 2.66341 7.32996 2.66341C9.90729 2.66341 11.9966 4.75275 11.9966 7.33008C11.9966 8.58735 11.4994 9.7285 10.6909 10.5676C10.6681 10.5852 10.6461 10.6044 10.6252 10.6253C10.6043 10.6463 10.585 10.6682 10.5675 10.6911C9.72835 11.4996 8.58722 11.9967 7.32996 11.9967C4.75263 11.9967 2.66329 9.90741 2.66329 7.33008ZM11.0751 12.018C10.0486 12.8391 8.74662 13.3301 7.32996 13.3301C4.01625 13.3301 1.32996 10.6438 1.32996 7.33008C1.32996 4.01637 4.01625 1.33008 7.32996 1.33008C10.6437 1.33008 13.33 4.01637 13.33 7.33008C13.33 8.74676 12.839 10.0488 12.0179 11.0752L14.468 13.5253C14.7284 13.7857 14.7284 14.2078 14.468 14.4682C14.2077 14.7285 13.7855 14.7285 13.5252 14.4682L11.0751 12.018Z"
+                    fill="#2D3440" />
+                </svg>
               </button>
             </li>
             <li class="header-second-item">
-              <button class="header-button" type="button">
+              <button class="header-button go-button" type="button">
                 <span class="button-span">Вход</span>
               </button>
             </li>
             <li class="header-second-item">
-              <button class="header-button" type="button">
+              <button class="header-button two-button" type="button">
                 <span class="button-span">2 товара</span>
               </button>
             </li>
@@ -62,21 +83,21 @@
             <fieldset class="filter-catalog-part">
               <legend class="filter-catalog-part-title">Сортировка:</legend>
               <select class="result-select" aria-label="по популярности">
-                <option value="more">Более популярные</option>
-                <option value="smaller">Менее популярные</option>
+                <option value="more">по популярности</option>
+                <option value="smaller">по цене</option>
               </select>
             </fieldset>
             <fieldset class="filter-catalog-part">
-              <legend class="filter-catalog-part-title">Цена:</legend>
+              <legend class="filter-catalog-part-title">Цена: 100 ₽–500 ₽</legend>
               <div class="range-container">
                 <div class="range-scale">
                   <div class="range"></div>
                 </div>
                 <button class="range-handle range-handle-min" type="button">
-                  <span class="range-handle-span">100 ₽ –</span>
+                  <span class="visually-hidden">Минимальная цена</span>
                 </button>
                 <button class="range-handle range-handle-max" type="button">
-                  <span class="range-handle-span">500 ₽</span>
+                  <span class="visually-hidden">Максимальная цена</span>
                 </button>
               </div>
             </fieldset>
@@ -111,11 +132,11 @@
             </fieldset>
             <fieldset class="filter-catalog-part">
               <legend class="filter-catalog-part-title">Наполнители:</legend>
-              <ul class="filter-catalog-part-list">
+              <ul class="filter-catalog-part-list filter-composition">
                 <li class="filter-catalog-part-item">
                   <label class="composition">
                     <input type="checkbox" class="composition-input" name="choko" checked>
-                    <span class="ccomposition-span">шоколадные</span>
+                    <span class="composition-span">шоколадные</span>
                   </label>
                 </li>
                 <li class="filter-catalog-part-item">
@@ -150,8 +171,7 @@
         <section class="variants">
           <h2 class="visually-hidden">Варианты мороженого</h2>
           <ul class="variants-list">
-            <li class="variants-item">
-              <img class="variants-image" src="images/red.png" alt="Малинка">
+            <li class="variants-item raspberry-item">
               <p class="variants-title-text">Малинка</p>
               <p class="variants-text">Сливочное мороженое с малиновым джемом</p>
               <div class="variants-container">
@@ -161,8 +181,7 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/green.png" alt="Фисташка">
+            <li class="variants-item pistachios-item">
               <p class="variants-title-text">Фисташка</p>
               <p class="variants-text">Фисташковый пломбир с кусочками шоколада</p>
               <div class="variants-container">
@@ -172,10 +191,9 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/black.png" alt="Черника">
+            <li class="variants-item blackberry-item">
               <p class="variants-title-text">Черника</p>
-              <p class="variants-text">Крем-брюле
+              <p class="variants-text">Крем-брюле<br>
                 с черничным джемом</p>
               <div class="variants-container">
                 <p class="variants-container-text">330 ₽/кг</p>
@@ -184,10 +202,9 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/blue.png" alt="Бабл-гам">
+            <li class="variants-item buble-item">
               <p class="variants-title-text">Бабл-гам</p>
-              <p class="variants-text">Ванильный пломбир
+              <p class="variants-text">Ванильный пломбир<br>
                 со сладкой посыпкой</p>
               <div class="variants-container">
                 <p class="variants-container-text">320 ₽/кг</p>
@@ -196,8 +213,7 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/blackberry.png" alt="Ежевика">
+            <li class="variants-item bluederry-item">
               <p class="variants-title-text">Ежевика</p>
               <p class="variants-text">Сливочное мороженое с ежевичным джемом</p>
               <div class="variants-container">
@@ -207,10 +223,9 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/banan.png" alt="Банан">
+            <li class="variants-item banana-item">
               <p class="variants-title-text">Банан</p>
-              <p class="variants-text">Сливочный пломбир
+              <p class="variants-text">Сливочный пломбир<br>
                 с банановым вкусом</p>
               <div class="variants-container">
                 <p class="variants-container-text">340 ₽/кг</p>
@@ -219,8 +234,7 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/chokolate.png" alt="Шоколадка">
+            <li class="variants-item choko-item">
               <p class="variants-title-text">Шоколадка</p>
               <p class="variants-text">Классический шоколадный пломбир</p>
               <div class="variants-container">
@@ -230,10 +244,9 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/strawberry.png" alt="Клубничка">
+            <li class="variants-item strawberry-item">
               <p class="variants-title-text">Клубничка</p>
-              <p class="variants-text">Сливочный пломбир
+              <p class="variants-text">Сливочный пломбир<br>
                 с клубничным вкусом</p>
               <div class="variants-container">
                 <p class="variants-container-text">300 ₽/кг</p>
@@ -242,8 +255,7 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/limon.png" alt="Лимон">
+            <li class="variants-item limon-item">
               <p class="variants-title-text">Лимон</p>
               <p class="variants-text">Освежающий лимонный сорбет</p>
               <div class="variants-container">
@@ -253,10 +265,9 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/mentol.png" alt="Ментол">
+            <li class="variants-item mentol-item">
               <p class="variants-title-text">Ментол</p>
-              <p class="variants-text">Сливочный пломбир
+              <p class="variants-text">Сливочный пломбир<br>
                 с ментоловым сиропом</p>
               <div class="variants-container">
                 <p class="variants-container-text">320 ₽/кг</p>
@@ -265,8 +276,7 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/nuts.png" alt="Орешек">
+            <li class="variants-item nut-item">
               <p class="variants-title-text">Орешек</p>
               <p class="variants-text">Фисташковый пломбир с шоколадным сиропом</p>
               <div class="variants-container">
@@ -276,10 +286,9 @@
                 </button>
               </div>
             </li>
-            <li class="variants-item">
-              <img class="variants-image" src="images/cream.png" alt="Крем-брюле">
+            <li class="variants-item crem-item">
               <p class="variants-title-text">Крем-брюле</p>
-              <p class="variants-text">Классическое крем-брюле </p>
+              <p class="variants-text">Классическое<br> крем-брюле </p>
               <div class="variants-container">
                 <p class="variants-container-text">280 ₽/кг</p>
                 <button class="variants-container-button">
@@ -291,7 +300,10 @@
         </section>
         <section class="pagination">
           <h2 class="visually-hidden">Страницы каталога</h2>
-          <button class="pagination-button" type="button">Показать еще</button>
+          <button class="pagination-button" type="button">
+            <span class="pagination-button-span">Показать еще</span>
+          </button>
+          <div class="pagination-container">
           <button class="button-prev" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
@@ -305,13 +317,15 @@
           <button class="button-next" type="button">
             <span class="visually-hidden">Вперед</span>
           </button>
+        </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer catalog-footer">
         <section class="footer-contacts">
-          <div class="footer-container">
-            <ul class="footer-contacts-list">
-              <li class="footer-contacts-item">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a href="https://t.me/htmlacademy" class="footer-contacts-link">
                 <svg class="slider-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -320,8 +334,10 @@
                   <rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity="0.3"
                     stroke-width="2" />
                 </svg>
-              </li>
-              <li class="footer-contacts-item">
+              </a>
+            </li>
+            <li class="footer-contacts-item">
+              <a href="https://vk.com/htmlacademy" class="footer-contacts-link">
                 <svg class="slider-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -330,8 +346,10 @@
                   <rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity="0.3"
                     stroke-width="2" />
                 </svg>
-              </li>
-              <li class="footer-contacts-item">
+              </a>
+            </li>
+            <li class="footer-contacts-item">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="footer-contacts-link">
                 <svg class="slider-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -340,14 +358,24 @@
                   <rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity="0.3"
                     stroke-width="2" />
                 </svg>
-              </li>
-            </ul>
-            <ul class="information-list">
-              <li class="information-title current-chapter">Для поставщиков</li>
-              <li class="information-title">Наши документы</li>
-              <li class="information-title">О производстве</li>
-              <li class="information-title">Экологические стандарты</li>
-            </ul>
+              </a>
+            </li>
+          </ul>
+          <ul class="information-list">
+            <li class="information-item current-chapter">
+              <a href="#" class="information-link">Для поставщиков</a>
+            </li>
+            <li class="information-item">
+              <a href="#" class="information-link">Наши документы</a>
+            </li>
+            <li class="information-item">
+              <a href="#" class="information-link">О производстве</a>
+            </li>
+            <li class="information-item standarts">
+              <a href="#" class="information-link">Экологические стандарты</a>
+            </li>
+          </ul>
+          <div class="html-academy-container">
             <img class="footer-image" src="images/htmlacademy.svg" alt="html academy">
             <p class="footer-text">Сделано в .html academy © 2021</p>
           </div>
