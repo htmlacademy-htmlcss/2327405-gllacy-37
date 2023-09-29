@@ -708,6 +708,17 @@ html {
   outline: none;
 }
 
+.empty-button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Inter",sans-serif;
+  text-decoration: none;
+  color:#fcfcfc;
+  text-align: center;
+}
+
 .slider-top-container {
   display: flex;
   justify-content: flex-start;
