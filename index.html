@@ -76,8 +76,7 @@
                   <li class="go-item">
                     <form action="https://echo.htmlacademy.ru" class="go-form" method="post">
                       <input class="go-input" type="email" name="go-email" placeholder="email@example.com" required>
-                      <input class="go-input password-input" type="password" name="go-password" placeholder="123456"
-                        required>
+                      <input class="go-input password-input" type="password" name="go-password" required>
                       <div class="go-container">
                         <button class="button-go red-button" type="submit">Войти</button>
                         <a href="#" class="go-text">Забыли пароль? Регистрация</a>
@@ -181,7 +180,7 @@
               </li>
             </ul>
             <ul class="slider-second-list">
-              <li class="slider-second-item red-item current-item">
+              <li class="slider-second-item red-item">
                 <img class="slider-image current-image" src="images/berry.png" alt="Клубничное мороженое">
               </li>
               <li class="slider-second-item">
@@ -384,6 +383,9 @@
               <div class="delivery-form-container">
                 <div class="delivery-data-container">
                   <label class="delivery-label date-label" for="date">Дата</label>
+                  <button class="date-label-button" type="button">
+                    <p class="date-label-text">Укажите дату доставки</p>
+                  </button>
                   <input type="text" class="delivery-input data-input" id="date" name="date" placeholder="01.04.2020"
                     required>
                 </div>
@@ -393,10 +395,17 @@
                     required>
                 </div>
               </div>
+              <div class="adres-container">
               <label class="delivery-label date-label adress-label" for="adress">Адрес</label>
+                <button class="adres-button">
+                  <p class="adres-text">
+                    Введите название улицы, дома и квартиры
+                  </p>
+                </button>
               <input type="text" class="delivery-input adress-input" name="adress" id="adress"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
-              <button class="delivery-button red-button subscription-button-span" type="submit">Отправить</button>
+              </div>
+                <button class="delivery-button red-button subscription-button-span" type="submit">Отправить</button>
             </form>
           </div>
         </section>
