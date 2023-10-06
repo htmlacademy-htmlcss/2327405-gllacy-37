@@ -61,7 +61,7 @@
               <div class="field-list">
                 <ul class="field-wrapper">
                   <li class="field-item">
-                    <input class="field-input" type="text" placeholder="Поиск по сайту" name="field-name" required>
+                    <input class="field-input condition-input" type="text" placeholder="Поиск по сайту" name="field-name" required>
                   </li>
                 </ul>
               </div>
@@ -75,8 +75,8 @@
                   </li>
                   <li class="go-item">
                     <form action="https://echo.htmlacademy.ru" class="go-form" method="post">
-                      <input class="go-input" type="email" name="go-email" placeholder="email@example.com" required>
-                      <input class="go-input password-input" type="password" name="go-password" required>
+                      <input class="go-input condition-input" type="email" name="go-email" placeholder="email@example.com" required>
+                      <input class="go-input password-input condition-input" type="password" name="go-password" required>
                       <div class="go-container">
                         <button class="button-go red-button" type="submit">Войти</button>
                         <a href="#" class="go-text">Забыли пароль? Регистрация</a>
@@ -336,7 +336,7 @@
               <li class="shop-description-item leaf">
                 <p class="shop-description-text">Для приготовления мороженого используются сливки и молоко высочайшего
                   качества. Все ингредиенты
-                  и добавки произведены из натурального сырья.</p>
+                 <br> и добавки произведены из натурального сырья.</p>
               </li>
               <li class="shop-description-item thermometer">
                 <p class="shop-description-text">Доставка нашего мороженого осуществляется в специальном термопаке,
@@ -360,7 +360,7 @@
                 ерунды.
                 Честно =)</p>
               <form action="https://echo.htmlacademy.ru" class="subscription-form" method="post">
-                <input class="subscription-input" type="email" placeholder="email@example.com" name="subscribe-email"
+                <input class="subscription-input condition-input" type="email" placeholder="email@example.com" name="subscribe-email"
                   required>
                 <button class="subscription-button red-button" type="submit">Отправить</button>
               </form>
@@ -386,12 +386,12 @@
                   <button class="date-label-button" type="button">
                     <p class="date-label-text">Укажите дату доставки</p>
                   </button>
-                  <input type="text" class="delivery-input data-input" id="date" name="date" placeholder="01.04.2020"
+                  <input type="text" class="delivery-input data-input condition-input" id="date" name="date" placeholder="01.04.2020"
                     required>
                 </div>
                 <div class="delivery-tel-container">
                   <label class="delivery-label" for="tel">Телефон</label>
-                  <input type="tel" class="delivery-input tel-input" id="tel" name="tel" placeholder="+7 800 999-00-00"
+                  <input type="tel" class="delivery-input tel-input condition-input" id="tel" name="tel" placeholder="+7 800 999-00-00"
                     required>
                 </div>
               </div>
@@ -402,7 +402,7 @@
                     Введите название улицы, дома и квартиры
                   </p>
                 </button>
-              <input type="text" class="delivery-input adress-input" name="adress" id="adress"
+              <input type="text" class="delivery-input adress-input condition-input" name="adress" id="adress"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
               </div>
                 <button class="delivery-button red-button subscription-button-span" type="submit">Отправить</button>
@@ -477,8 +477,8 @@
             <span class="visually-hidden">Закрыть модальное окно</span>
           </button>
           <form action="https://echo.htmlacademy.ru" class="modal-form" method="get">
-            <input type="text" class="modal-input" name="modal-name" placeholder="Имя и фамилия" required>
-            <input type="email" class="modal-input" name="modal-email" placeholder="email@example.com" required>
+            <input type="text" class="modal-input condition-input" name="modal-name" placeholder="Имя и фамилия" required>
+            <input type="email" class="modal-input condition-input" name="modal-email" placeholder="email@example.com" required>
             <textarea class="modal-textarea" name="modal-textarea" placeholder="В свободной форме" required></textarea>
             <button class="modal-button red-button" type="submit">Отправить</button>
           </form>
