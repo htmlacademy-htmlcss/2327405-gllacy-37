@@ -229,7 +229,7 @@ html {
   z-index: 10;
   top: 100%;
   padding-top: 7px;
-  left:1px;
+  left: 1px;
 }
 
 .catalog-list-wrapper {
@@ -354,6 +354,9 @@ html {
   font-weight: 700;
   text-decoration: none;
   color: #2d3440;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
 }
 
 .header-tel:hover {
@@ -424,10 +427,10 @@ html {
   min-height: 96px;
   box-sizing: border-box;
   top: 100%;
-  left: -323px;
+  left: -325px;
   z-index: 10;
   display: none;
-  padding-top: 10px;
+  padding-top: 9px;
 }
 
 .field-wrapper {
@@ -454,6 +457,7 @@ html {
   font-weight: 400;
   line-height: 20px;
   color: #b9b9b9;
+  font-family: "Inter",sans-serif;
 }
 
 .search-button:hover {
@@ -514,6 +518,10 @@ html {
   margin-bottom: 32px;
 }
 
+.go-catalog{
+margin-bottom: 33px;
+}
+
 .go-input {
   width: 324px;
   min-height: 48px;
@@ -534,7 +542,15 @@ html {
 }
 
 .password-input {
+  margin: 0;
   margin-bottom: 31px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 12px;
+  letter-spacing: -1px;
 }
 
 .button-go {
@@ -555,7 +571,7 @@ html {
   line-height: 20px;
   font-family: "Inter", sans-serif;
   cursor: pointer;
-  border:none;
+  border: none;
   align-self: flex-start;
 }
 
@@ -646,6 +662,10 @@ html {
   left: -325px;
   display: none;
   padding-top: 9px;
+}
+
+.catalog-two-list{
+
 }
 
 .two-wrapper {
@@ -910,7 +930,7 @@ html {
 .title-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   font-size: 36px;
   font-style: normal;
   font-weight: 900;
@@ -933,7 +953,10 @@ html {
 
 .slider-text {
   font-size: 18px;
-  margin-bottom: 61px;
+  margin-bottom: 59px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .slider-second-list {
@@ -958,7 +981,7 @@ html {
   width: 100px;
   height: 100px;
   opacity: 0.4;
-  background: url(<path-to-image>), lightgray -173.628px -3.257px / 375.777% 144.876% no-repeat;
+  background: lightgray -173.628px -3.257px / 375.777% 144.876% no-repeat;
   top: 207px;
   left: 0;
   border-radius: 50%;
@@ -1038,7 +1061,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 74px;
+  margin-bottom: 73px;
 }
 
 .slider-bullet-list {
@@ -1385,7 +1408,7 @@ html {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 82px;
+  margin-bottom: 81px;
 }
 
 .subscription-first-container {
@@ -1474,9 +1497,9 @@ html {
   margin-top: 2px;
 }
 
-.red-button{
+.red-button {
   outline: 4px solid rgba(255, 47, 100, 0.30);
-  border:none;
+  border: none;
 }
 
 .red-button:hover {
@@ -1617,13 +1640,13 @@ html {
   width: 100px;
   height: 36px;
   border: 1px solid #b9b9b9;
-  padding: 3px 8px;
+  padding: 2px 8px;
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
   background-color: #ffffff;
   text-align: center;
-  top: -25px;
+  top: -15px;
   left: 25px;
   display: none;
 }
@@ -1693,7 +1716,7 @@ html {
   background-color: #ffffff;
   width: 169px;
   height: 52px;
-  top: -30px;
+  top: -15px;
   left: 25px;
   display: none;
 }
@@ -1925,7 +1948,7 @@ html {
 .information-container {
   display: flex;
   padding-left: 27px;
-  padding-top: 2px;
+  padding-top: 1px;
   justify-content: flex-start;
   gap: 25px;
 }
@@ -1980,7 +2003,7 @@ html {
 }
 
 .html-academy-link {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .html-academy-link:hover {
@@ -2090,10 +2113,10 @@ html {
 .modal-close-button {
   position: absolute;
   top: 30px;
-  left: 510px;
+  left: 516px;
   width: 20px;
   height: 20px;
-  background-image: url("../images/small-cross.svg");
+  background-image: url("../images/big-cross.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
@@ -2231,7 +2254,9 @@ html {
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.10);
   margin-left: 293px;
   cursor: pointer;
-  border:none;
+  border: none;
+  background: var(--special-extra-bright, #ff2f64);
+  color: #fcfcfc;
 }
 
 /*
@@ -2255,7 +2280,7 @@ html {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .main-navigation-item {
@@ -2303,7 +2328,11 @@ html {
 .catalog-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 51px;
+  margin-bottom: 39px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
 }
 
 .filter-catalog {
@@ -2321,6 +2350,8 @@ html {
 }
 
 .filter-catalog-part-title {
+  margin: 0;
+  padding: 0;
   margin-bottom: 9px;
   padding-left: 15px;
   font-size: 14px;
@@ -2606,7 +2637,7 @@ html {
   list-style: none;
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 38px 31px;
+  gap: 38px 30px;
   border-radius: 8px;
   margin-bottom: 53px;
 }
